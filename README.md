@@ -3,22 +3,22 @@
 This code is in the public domain.  
 Do whatever you want with it.  
 Modify by shannon112 @2017.04.20  
-
-[Purpose]
-This code can initialize the ESC by Arduino.
+  
+[Purpose]  
+This code can initialize the ESC by Arduino.  
 So you will enable to control BLDC motor by Arduino! 
-
+  
 [Device]  
 ESC: XXD HW30A 30A (新西達30A 無刷電變 好盈程序)  
 Brushless motor: XXD A2212 2450KV (新西達 A2212 2450KV 無刷馬達)  
-  
+   
 [Wiring]  
 See the figure below    
 http://imgur.com/a/1vZ9u   
 hint: DON'T connect the red wire to your 5v Port,  
 because it could destroy your computer's USB Port.  
 Just keep it empty !  
-   
+  
 [Instruction]  
 step1.running SN_ESCInitialize.ino   
 step2.open the serial port  
