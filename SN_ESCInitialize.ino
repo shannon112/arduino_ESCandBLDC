@@ -1,18 +1,9 @@
 /*
    This code is in the public domain.
-   (Do whatever you want with it.)
-   modify by shannon 2017.04.20
+   Do whatever you want with it.
+   Modify by shannon112 2017.04.20
 
-   [Device]
-   ESC: XXD HW30A 30A (新西達30A 無刷電變 好盈程序)
-   Brushless motor: XXD A2212 2450KV (新西達 A2212 2450KV 無刷馬達)
-   
-   [Instruction]
-   step1.running the program
-   step2.open the serial port
-   step3.turn on the power of ESC & motor
-   step4.choose what you want to do in the serial port
-   hint : In generally, you need to initialize your ESC first
+   Please reading the README.md before runnig this code.
 */
 
 // Need the Servo library
