@@ -4,6 +4,7 @@
    Modify by shannon112 2017.04.20
 
    Please reading the README.md before runnig this code.
+   https://github.com/shannon112/arduino_ESCandBLDC
 */
 
 // Need the Servo library
