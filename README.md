@@ -1,4 +1,4 @@
-# arduino_ESCandBLDC
+# arduino_ESCandBLDC (用Arduino控制電變/無刷馬達)
 [Declare]  
 This code is in the public domain.  
 Do whatever you want with it.  
