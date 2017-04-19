@@ -25,25 +25,25 @@ void setup()
   Brushless1.write(0);
   Brushless2.write(0);
   Serial.print("Arming the motor! ");
-  Serial.print("(hearing regular beep---beep---beep--- )\n");
+  Serial.println("(hearing regular beep---beep---beep--- )");
 }
 
-void initialize_motor(){
-  Serial.print("Setting high speed! and wait 2 sec! \n");
-  Serial.print("(hearing regular beep-beep)\n");
+void initialize_motor() {
+  Serial.print("Setting high speed! and wait 2 sec! ");
+  Serial.println("(hearing beep-beep)");
   Brushless1.write(180);
   Brushless2.write(180);
   delay(2000);
-  Serial.print("Setting back to low speed! and wait 4 sec! \n");
-  Serial.print("(hearing regular beep-beep-beep)\n");
+  Serial.print("Setting back to low speed! and wait 4 sec! ");
+  Serial.println("(hearing beep-beep-beep)");
   Brushless1.write(5);
   Brushless2.write(5);
   delay(4000);
-  Serial.print("MOTOR IS READY! \n");
-  Serial.print("(hearing regular beep---beep---beep--- )\n");
+  Serial.print("MOTOR IS READY! ");
+  Serial.println("(hearing regular beep---beep---beep--- )");
 }
 
-void testfunction(){
+void testfunction() {
   Serial.println("3");
   delay(1000);
   Serial.println("2");
@@ -98,6 +98,7 @@ void testfunction(){
 
 void loop() {
   String ans;
+  Serial.println();
   Serial.print("Start to initailize? [y/n] or testing ?[t] \n");
   while (Serial.available() == 0)  {
   }
