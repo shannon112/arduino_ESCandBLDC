@@ -24,19 +24,23 @@ void setup()
   Serial.begin(9600);
   Brushless1.write(0);
   Brushless2.write(0);
-  Serial.print("Arming the motor!\n");
+  Serial.print("Arming the motor! ");
+  Serial.print("(hearing regular beep---beep---beep--- )\n");
 }
 
 void initialize_motor(){
   Serial.print("Setting high speed! and wait 2 sec! \n");
+  Serial.print("(hearing regular beep-beep)\n");
   Brushless1.write(180);
   Brushless2.write(180);
   delay(2000);
   Serial.print("Setting back to low speed! and wait 4 sec! \n");
+  Serial.print("(hearing regular beep-beep-beep)\n");
   Brushless1.write(5);
   Brushless2.write(5);
   delay(4000);
   Serial.print("MOTOR IS READY! \n");
+  Serial.print("(hearing regular beep---beep---beep--- )\n");
 }
 
 void testfunction(){
