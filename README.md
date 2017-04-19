@@ -20,6 +20,7 @@ because it could destroy your computer's USB Port.
 Just keep it empty !  
   
 [Instruction]  
+steo0.turn off the power of ESC & motor  
 step1.running SN_ESCInitialize.ino   
 step2.open the serial port  
 step3.turn on the power of ESC & motor  
@@ -40,7 +41,8 @@ http://imgur.com/a/1vZ9u  
 就留空，不接即可！  
   
 [步驟]  
-step1.先執行 SN_ESCInitialize.ino   
+step0.先關掉連接無刷、電變的電源  
+step1.先執行 SN_ESCInitialize.ino  
 step2.上傳完成後，打開序列埠監控視窗   
 step3.打開連接無刷、電變的電源  
 step4.回到序列埠監控視窗選擇接下來的指令  
