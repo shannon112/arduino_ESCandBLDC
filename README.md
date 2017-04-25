@@ -45,7 +45,7 @@ step1.先執行 SN_ESCInitialize.ino
 step2.上傳完成後，打開序列埠監控視窗   
 step3.打開連接無刷、電變的電源  
 step4.回到序列埠監控視窗選擇接下來的指令  
-提示: 一般來說建議先打"y"進行初始化，成功後，再打"t"進行每個速度的測試
-"s"可以定速(輸入21~165的值)，而"o"則可以停止馬達轉動
+提示: 一般來說建議先打"y"進行初始化，成功後，再打"t"進行每個速度的測試  
+"s"可以定速(輸入21~165的值)，而"o"則可以停止馬達轉動  
 
 <img src="https://raw.githubusercontent.com/shannon112/arduino_ESCandBLDC/master/image.jpg" width="500">
