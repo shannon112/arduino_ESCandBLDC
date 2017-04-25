@@ -15,6 +15,7 @@ Servo Brushless1;
 Servo Brushless2;
 boolean initializeState = 0;
 
+
 // Set everything up
 void setup()
 {
@@ -28,7 +29,9 @@ void setup()
   Serial.println("(hearing regular beep---beep---beep--- )");
 }
 
+
 void initialize_motor() {
+  Serial.print("Okay, Starting to initailize...\n");
   Serial.print("Setting high speed! and wait 2 sec! ");
   Serial.println("(hearing beep-beep)");
   Brushless1.write(180);
@@ -43,7 +46,9 @@ void initialize_motor() {
   Serial.println("(hearing regular beep---beep---beep--- )");
 }
 
+
 void testfunction() {
+  Serial.print("Okay, starting testing brushless motor...\n");
   Serial.println("3");
   delay(1000);
   Serial.println("2");
@@ -73,7 +78,7 @@ void testfunction() {
 
   Serial.print("Test5 Speed = 100, speed will increase in 1sec \n");
   Brushless1.write(70);
-  Brushless2.write(60);
+  Brushless2.write(70);
   delay(1000);
 
   Serial.print("Test6 Speed = 120, speed will increase in 1sec \n");
@@ -96,26 +101,54 @@ void testfunction() {
   Brushless2.write(5);
 }
 
+void testConstantSpeed() {
+  int testConstantSpeed = 0;
+  Serial.println("Enter the testing speed ...(21~165)");
+  while (Serial.available() == 0)  {
+  }
+  testConstantSpeed = Serial.parseInt();
+  if ((testConstantSpeed > 20) && (testConstantSpeed < 165)) {
+    Serial.print("Test Speed = ");
+    Serial.println(testConstantSpeed);
+    Brushless1.write(testConstantSpeed);
+    Brushless2.write(testConstantSpeed);
+  } else
+    Serial.println("Wrong speed! ");
+}
+
+
+void stopmotor() {
+  Serial.println("STOP!");
+  Brushless1.write(5);
+  Brushless2.write(5);
+}
+
 void loop() {
   String ans;
   Serial.println();
-  Serial.print("Start to initailize? [y/n] or testing ?[t] \n");
+  Serial.print("Start to initailize? [y/n] or testing ?[t][s] or stoping? [o]\n");
   while (Serial.available() == 0)  {
   }
   ans = Serial.readString();
   if (ans == "y") {
-    Serial.print("Okay, Starting to initailize...\n");
     initialize_motor();
     initializeState = 1;
   } else if (ans == "n") {
     Serial.print("Okay, waiting...\n");
-  } else if (ans == "t") {
-    if (initializeState == 1) {
-      Serial.print("Okay, starting testing brushless motor...\n");
-      testfunction();
-    } else
-      Serial.print("Sorry, you need to initialize motor first!\n");
-  } else {
+  } else if ((ans == "t") || (ans == "o") || (ans == "s")) {
+    if (initializeState == 0) {
+      Serial.print("Sorry, you need to initailize motor...\n");
+    } else {
+      if (ans == "t") {
+        testfunction();
+      } else if (ans == "s") {
+        testConstantSpeed();
+      } else if (ans == "o") {
+        stopmotor();
+      }
+    }
+  }
+  else {
     Serial.print("Wrong ans!\n");
   }
 }
