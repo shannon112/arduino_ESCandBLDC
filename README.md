@@ -15,7 +15,6 @@ Brushless motor: XXD A2212 2450KV (新西達 A2212 2450KV 無刷馬達)
    
 [Wiring]  
 See the figure below    
-http://imgur.com/a/1vZ9u   
 hint: DON'T connect the red wire to your 5v Port,  
 because it could destroy your computer's USB Port.  
 Just keep it empty !  
@@ -36,7 +35,6 @@ hint: In generally, you need to initialize your ESC first
    
 [接線]   
 見下方連接的圖  
-http://imgur.com/a/1vZ9u    
 提示: 不要把電變接出來的三條杜邦線中間的紅線接到Arduino的5V，  
 這樣做會燒壞你的電腦或是你的Arduino（我燒壞過一片  
 就留空，不接即可！  
@@ -48,3 +46,5 @@ step2.上傳完成後，打開序列埠監控視窗
 step3.打開連接無刷、電變的電源  
 step4.回到序列埠監控視窗選擇接下來的指令  
 提示: 一般來說建議先打"y"進行初始化，成功後，再打"t"進行測試  
+
+<img src="https://raw.githubusercontent.com/shannon112/arduino_ESCandBLDC/master/image.jpg" width="500">
