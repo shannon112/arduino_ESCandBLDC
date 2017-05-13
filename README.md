@@ -26,7 +26,7 @@ step3.turn on the power of ESC & motor
 step4.choose what you want to do in the serial port  
 step5.choose functions whatever you want by typing in   
 ```y```for initailize  
-```t```for test every enable speed (21~165)  
+```t```for test every enable speed from 21 to 165  
 ```s```and intput```21```~```165```for test selected constant speed  
 ```o```stop the motor   
 
