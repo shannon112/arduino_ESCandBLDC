@@ -31,3 +31,5 @@ step5.choose functions whatever you want by typing in
 ```o```stop the motor   
 
 <img src="https://raw.githubusercontent.com/shannon112/arduino_ESCandBLDC/master/image.jpg" width="500">
+  
+<img src="https://raw.githubusercontent.com/shannon112/arduino_ESCandBLDC/master/image2.png" width="500">
