@@ -23,28 +23,11 @@ steo0.turn off the power of ESC & motor
 step1.running SN_ESCInitialize.ino   
 step2.open the serial port  
 step3.turn on the power of ESC & motor  
-step4.choose what you want to do in the serial port  
-hint: In generally, you need to initialize your ESC first  
-  
-# 使用Arduino控制電變/無刷馬達
-
-### 目的  
-利用Arduino初始化電變(ESC)，  
-並利用Arduino進行無刷馬達的控制測試.  
-   
-### 接線   
-見下方連接的圖  
-提示: 不要把電變接出來的三條杜邦線中間的紅線接到Arduino的5V，  
-這樣做會燒壞你的電腦或是你的Arduino（我燒壞過一片  
-就留空，不接即可！  
-  
-### 步驟  
-step0.先關掉連接無刷、電變的電源  
-step1.先執行 SN_ESCInitialize.ino  
-step2.上傳完成後，打開序列埠監控視窗   
-step3.打開連接無刷、電變的電源  
-step4.回到序列埠監控視窗選擇接下來的指令  
-提示: 一般來說建議先打```y```進行初始化，成功後，再打```t```進行每個速度的測試  
-```s```可以定速(輸入```21```~```165```的值)，而```o```則可以停止馬達轉動  
+step4.choose what you want to do in the serial port  
+step5.choose functions whatever you want by typing in   
+```y```for initailize  
+```t```for test every enable speed (21~165)  
+```s```and intput```21```~```165```for test selected constant speed  
+```o```stop the motor   
 
 <img src="https://raw.githubusercontent.com/shannon112/arduino_ESCandBLDC/master/image.jpg" width="500">
