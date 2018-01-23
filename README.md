@@ -15,7 +15,6 @@ Brushless motor: XXD A2212 2450KV (新西達 A2212 2450KV 無刷馬達)
 ### Wiring  
 See the figure below    
 hint: DON'T connect the red wire to your 5v Port,  
-because it could destroy your computer's USB Port.  
 Just keep it empty !  
   
 ### Instruction  
