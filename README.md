@@ -34,4 +34,4 @@ step5.choose functions whatever you want by typing in
 <img src="https://raw.githubusercontent.com/shannon112/arduino_ESCandBLDC/master/image2.png" width="500">
 
 ### Instruction Blog
-https://shannon9open.wordpress.com/2018/01/23/%E3%80%8C%E9%80%8F%E9%81%8E%E9%9B%BB%E8%AE%8A%E6%8E%A7%E5%88%B6%E7%84%A1%E5%88%B7%E9%A6%AC%E9%81%94%E3%80%8D-arduino%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C01-%E9%9A%A8%E6%89%8B/
+https://shannon112.blogspot.tw/2017/04/arduinoarduino.html
